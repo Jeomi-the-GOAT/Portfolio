@@ -1,0 +1,119 @@
+*{
+    background-color: hsl(0, 10%, 5%);
+}
+
+.items{
+    color: white;
+}
+
+#container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.2fr 2fr;
+    grid-template-areas: 
+    "Nav Nav"
+    "side main";
+}
+
+@media only screen and (max-width:550px){
+    #container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 0.4fr 2fr;
+        grid-template-areas: 
+        "Nav"
+        "Nav"
+        "side"
+        "main";
+    }
+}
+
+
+#Nav {
+    grid-area: Nav;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;   
+}
+
+#Nav a{
+    text-decoration: none;
+    color: white;
+    background-color: hsl(180, 50%, 20%);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+#side {
+    grid-area: side;
+}
+
+#side a{
+    color: white;
+    background-color: hsl(180, 50%, 20%);
+
+}
+
+#side a:link{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+side a:visited{
+    color: white;
+}
+
+#side a:hover{
+    color: hsl(0, 0%, 80%);
+}
+#main {
+    grid-area: main;
+}
+
+#keys button{
+    width: 100px;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    border: none;
+    background-color: hsl(180, 50%, 20%);
+    border-radius: 50px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#keys button:hover{
+    background-color: hsl(180, 50%, 30%);
+}
+
+#keys button:active{
+    background-color: hsl(180, 50%, 40%);
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+#main{
+    overflow: hidden;
+    background-color: hsl(0, 10%, 20%)
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    color: white;
+}
+
+
