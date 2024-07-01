@@ -1,78 +1,58 @@
 *{
-    background-color: hsl(0, 10%, 5%);
+    box-sizing: border-box;
+    font-weight: normal;
 }
 
-.items{
-    color: white;
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, hsl(240, 20%, 23%), hsl(260, 8%, 7%));
 }
 
-#container{
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 3fr;
-    grid-template-areas: 
-    "Nav"
-    "main";
-}
-
-
-#Nav {
-    grid-area: Nav;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;   
-}
-
-#Nav a{
+.items ul,a{
+    list-style-type: none;
     text-decoration: none;
-    color: white;
-    background-color: hsl(180, 50%, 20%);
-    padding: 5px;
-    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    justify-content: flex-end;
+    color: hsl(0, 0%, 100%);
+}
+
+.items ul,a:hover{
+    color: hsl(0, 0%, 50%);
+}
+
+.items ul,a:hover{
+    color: hsl(0, 0%, 25%);
 }
 
 
-#main {
-    grid-area: main;
-    overflow: auto;
+#main #keys{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    justify-content: center;
+    align-content: center;
+    font-size: 3rem;
 }
 
-#keys button{
-    width: 100px;
-    height: 100px;
-    color: rgb(0, 0, 0);
-    border: none;
-    background-color: hsl(180, 50%, 20%);
-    border-radius: 50px;
+#main button{
     font-size: 3rem;
     cursor: pointer;
+    border: 1px solid hsl(0, 0%, 100%);
 }
 
-#keys button:hover{
-    background-color: hsl(180, 50%, 30%);
+#main button:hover{
+    color: hsl(0, 0%, 70%);
 }
-
-#keys button:active{
-    background-color: hsl(180, 50%, 40%);
-}
-
-#keys{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 25px;
-}
-
 
 #display{
-    width: 100%;
-    padding: 20px;
-    font-size: 5rem;
-    text-align: left;
-    border: none;
-    color: white;
+    width: 400px;
+    font-size: 3rem;
 }
 
-
+#show{
+    display: flex;
+    justify-content: center;
+}

@@ -9,13 +9,17 @@
 <body>
    <div id="container">
       <div id="Nav" class="items">
-        <a href="index.html">Calculator</a>
-        <a href="https://google.com">About me</a>
-        <a href="https://bing.com">Contact me</a>
+        <ul>
+         <li><a href="index.html">Calculator</a></li>
+         <li><a href="#">About me</a></li>
+         <li><a href="#">Contact me</a></li>
+        </ul>
       </div>
 
       <div id="main" class="items">
-         <input id="display" readonly>
+          <div id="show">
+             <input id="display" readonly>
+          </div>
          <div id="keys">
             <button onclick="append('+')">+</button>
             <button onclick="append('7')">7</button>
