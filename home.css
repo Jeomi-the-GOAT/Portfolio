@@ -56,3 +56,26 @@ body {
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 600px){
+    #display{
+        width: 200px;
+        font-size: 1.5rem;
+    }
+
+    #main #keys{
+        display: grid;
+        grid-template-columns: repeat(4, 50px);
+        grid-template-rows: repeat(5, 50px);
+        justify-content: center;
+        align-content: center;
+        font-size: 1.5rem;
+    }
+
+    #main button{
+        font-size: 1.5rem;
+        cursor: pointer;
+        border: 1px solid hsl(0, 0%, 100%);
+    }
+    
+}
