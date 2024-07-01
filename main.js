@@ -17,3 +17,7 @@ function cal(){
     }
 }
 
+function del(){
+    display.value = display.value.slice(0, -1);
+}
+
