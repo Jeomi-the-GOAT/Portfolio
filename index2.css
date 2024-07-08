@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, hsl(240, 20%, 23%), hsl(260, 8%, 7%));
+}
+
+.Nav a,ul{
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 10px;
+}
+
+.input{
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.fix{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+}
+
+.fa-solid.fa-location-dot{
+    padding: 10px;
+    font-size: 2rem;
+}
+
+
+.input button,.fa-solid.fa-magnifying-glass{
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    font-size: 2rem;
+    background-color: hsl(0, 0%, 88%);
+    cursor: pointer;
+}
+
+.input button:hover,.fa-solid.fa-magnifying-glass:hover{
+    background-color: hsl(0, 0%, 78%);
+}
+
+.input button:active,.fa-solid.fa-magnifying-glass:active{
+    background-color: hsl(0, 0%, 68%);
+}
+
+
+.input input{
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 5px;
+}
