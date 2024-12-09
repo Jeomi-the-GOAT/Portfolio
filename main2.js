@@ -22,9 +22,15 @@ function getinfo(){
           .then(json => {
             if(json.cod ==='404'){
                 output.textContent = "Place not found!";
+                main.innerHTML = "";
+                base.innerHTML = "";
+                feel.innerHTML = "";
+                max.innerHTML = "";
+                min.innerHTML = "";
+                rise.innerHTML = "";
+                set.innerHTML = "";
             }
             else{
-
                 const unixTimestamp = json.sys.sunrise * 1000;
                 const unixTimestamp2 = json.sys.sunset * 1000;
                 const dateObject = new Date(unixTimestamp);
